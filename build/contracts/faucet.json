@@ -1,0 +1,362 @@
+{
+  "contractName": "faucet",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "num",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"num\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Contract.sol\":\"faucet\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Contract.sol\":{\"keccak256\":\"0x23067e7e3a06d47d02d98e836f75211cdf681c81d0910bfdba1c75fdf78a0279\",\"urls\":[\"bzzr://fecd6d9f30da9161fdd8bfba59defad9e6dab16d961eaa7027213ae40e177169\"]}},\"version\":1}",
+  "bytecode": "0x6080604052610d486000557fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7b60015534801561003a57600080fd5b5060d0806100496000396000f3fe6080604052600436106043576000357c0100000000000000000000000000000000000000000000000000000000900480634e70b1dc1460485780638381f58a146070575b600080fd5b348015605357600080fd5b50605a6098565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b506082609e565b6040518082815260200191505060405180910390f35b60015481565b6000548156fea165627a7a72305820f4e345c4fc4a539bd105572d2c426eaac0f6e8d7513abbf9f405a63b7584e0220029",
+  "deployedBytecode": "0x6080604052600436106043576000357c0100000000000000000000000000000000000000000000000000000000900480634e70b1dc1460485780638381f58a146070575b600080fd5b348015605357600080fd5b50605a6098565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b506082609e565b6040518082815260200191505060405180910390f35b60015481565b6000548156fea165627a7a72305820f4e345c4fc4a539bd105572d2c426eaac0f6e8d7513abbf9f405a63b7584e0220029",
+  "sourceMap": "34:99:0:-;;;76:4;56:24;;114:4;97:21;;34:99;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:99:0;;;;;;;",
+  "deployedSourceMap": "34:99:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;97:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;97:21:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;56:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;56:24:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;97:21;;;;:::o;56:24::-;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\r\ncontract faucet{\r\n    uint public number= 3400; //postive\r\n    int public num = -133; //negative\r\n}",
+  "sourcePath": "D:\\chain\\contracts\\Contract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Contract.sol",
+    "exportedSymbols": {
+      "faucet": [
+        9
+      ]
+    },
+    "id": 10,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "faucet",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "number",
+            "nodeType": "VariableDeclaration",
+            "scope": 9,
+            "src": "56:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "33343030",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "76:4:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3400_by_1",
+                "typeString": "int_const 3400"
+              },
+              "value": "3400"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "num",
+            "nodeType": "VariableDeclaration",
+            "scope": 9,
+            "src": "97:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "int",
+              "nodeType": "ElementaryTypeName",
+              "src": "97:3:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "id": 7,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "nodeType": "UnaryOperation",
+              "operator": "-",
+              "prefix": true,
+              "src": "114:4:0",
+              "subExpression": {
+                "argumentTypes": null,
+                "hexValue": "313333",
+                "id": 6,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "115:3:0",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_133_by_1",
+                  "typeString": "int_const 133"
+                },
+                "value": "133"
+              },
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_minus_133_by_1",
+                "typeString": "int_const -133"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 10,
+        "src": "34:99:0"
+      }
+    ],
+    "src": "0:133:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Contract.sol",
+      "exportedSymbols": {
+        "faucet": [
+          9
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            9
+          ],
+          "name": "faucet",
+          "scope": 10
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "number",
+              "scope": 9,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "56:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "33343030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 3400",
+                  "value": "3400"
+                },
+                "id": 3,
+                "name": "Literal",
+                "src": "76:4:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "56:24:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "num",
+              "scope": 9,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "int256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "int",
+                  "type": "int256"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "97:3:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "operator": "-",
+                  "prefix": true,
+                  "type": "int_const -133"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "313333",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 133",
+                      "value": "133"
+                    },
+                    "id": 6,
+                    "name": "Literal",
+                    "src": "115:3:0"
+                  }
+                ],
+                "id": 7,
+                "name": "UnaryOperation",
+                "src": "114:4:0"
+              }
+            ],
+            "id": 8,
+            "name": "VariableDeclaration",
+            "src": "97:21:0"
+          }
+        ],
+        "id": 9,
+        "name": "ContractDefinition",
+        "src": "34:99:0"
+      }
+    ],
+    "id": 10,
+    "name": "SourceUnit",
+    "src": "0:133:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x2953b8ebC96341BE57D2af215e8824E942EB4CbC",
+      "transactionHash": "0x50c1732919659743852e7465b663acb49f3529b212c9fe3df072c863698f62b6"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-12-27T12:43:26.489Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
